@@ -6,14 +6,14 @@ const space = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', 
 
 export default function LandingPage() {
   return (
-    <main className={`min-h-screen bg-gradient-to-br from-slate-950 via-violet-950/50 to-slate-950 text-white relative overflow-hidden ${space.className}`}>
+    <main className={`min-h-screen bg-gradient-to-br from-slate-950 via-violet-950/50 to-slate-950 text-white relative overflow-x-hidden flex flex-col ${space.className}`}>
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-violet-600/20 blur-3xl" />
         <div className="absolute top-1/4 -right-24 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl" />
         <div className="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 py-14">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 py-14 flex-1 flex flex-col">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-xl">
@@ -87,7 +87,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <footer className="mt-16 border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-center md:items-center md:justify-between gap-4 text-sm text-slate-400 text-center md:text-left">
+        <footer className="mt-auto border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-center md:items-center md:justify-between gap-4 text-sm text-slate-400 text-center md:text-left">
           <div className="w-full md:w-auto">
             <p className="text-slate-300 font-medium">Designed & developed by Anurag</p>
           </div>

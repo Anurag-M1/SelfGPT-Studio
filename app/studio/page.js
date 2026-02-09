@@ -330,7 +330,7 @@ function DashboardView({ user, onLogout, onOpenProject, onCreateProject }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 flex flex-col">
       {/* Navbar */}
       <nav className="border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -362,7 +362,7 @@ function DashboardView({ user, onLogout, onOpenProject, onCreateProject }) {
       </nav>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-12 flex-1 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <div>
@@ -500,7 +500,7 @@ function DashboardView({ user, onLogout, onOpenProject, onCreateProject }) {
           </div>
         )}
 
-        <footer className="mt-14 border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-center md:items-center md:justify-between gap-4 text-sm text-slate-400 text-center md:text-left">
+        <footer className="mt-auto border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-center md:items-center md:justify-between gap-4 text-sm text-slate-400 text-center md:text-left">
           <div className="w-full md:w-auto">
             <p className="text-slate-300 font-medium">Designed & developed by Anurag</p>
           </div>
@@ -1543,30 +1543,6 @@ function EditorView({ project: initialProject, onBack }) {
             <Eye className="w-3.5 h-3.5" />
             Preview
           </Button>
-          <div className="hidden xl:flex items-center gap-3 ml-auto text-[10px] text-slate-500 whitespace-nowrap">
-            <div>
-              <span className="text-slate-400">Designed & developed by</span>{' '}
-              <span className="text-slate-200">Anurag</span>
-            </div>
-            <a
-              href="https://github.com/anurag-m1"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-slate-400 hover:text-white transition"
-            >
-              <Github className="w-3.5 h-3.5" />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://instagram.com/ca_anuragsingh"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 text-slate-400 hover:text-white transition"
-            >
-              <Instagram className="w-3.5 h-3.5" />
-              <span>Instagram</span>
-            </a>
-          </div>
         </div>
       </div>
 
