@@ -500,11 +500,11 @@ function DashboardView({ user, onLogout, onOpenProject, onCreateProject }) {
           </div>
         )}
 
-        <footer className="mt-14 border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-slate-400">
-          <div>
+        <footer className="mt-14 border-t border-slate-800/60 pt-6 flex flex-col md:flex-row items-center md:items-center md:justify-between gap-4 text-sm text-slate-400 text-center md:text-left">
+          <div className="w-full md:w-auto">
             <p className="text-slate-300 font-medium">Designed & developed by Anurag</p>
           </div>
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 w-full md:w-auto md:justify-end">
             <a
               href="https://github.com/anurag-m1"
               target="_blank"
@@ -1543,7 +1543,7 @@ function EditorView({ project: initialProject, onBack }) {
             <Eye className="w-3.5 h-3.5" />
             Preview
           </Button>
-          <div className="hidden xl:flex items-center gap-3 ml-2 text-[10px] text-slate-500">
+          <div className="hidden xl:flex items-center gap-3 ml-auto text-[10px] text-slate-500 whitespace-nowrap">
             <div>
               <span className="text-slate-400">Designed & developed by</span>{' '}
               <span className="text-slate-200">Anurag</span>
