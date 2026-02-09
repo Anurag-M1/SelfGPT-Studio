@@ -102,6 +102,7 @@ Open:
 - **Landing**: http://localhost:3000
 - **Studio**: http://localhost:3000/studio
 - **Backend**: http://localhost:8000
+- **live**:https://self-gpt-studio.vercel.app
 
 ---
 
